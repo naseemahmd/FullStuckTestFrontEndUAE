@@ -1,0 +1,234 @@
+<div class="area">
+    <!-- Nav Bar -->
+    <nav class="main-menu">
+        <img class="content__icon" src="../../assets/fudge.svg" />
+        <img class="content_img" src="../../assets/bcImg.png">
+        <ul>
+            <li class="has-subnav" (click)="select('Dashboard')" [ngStyle]="selected === 'Dashboard'?{'color':'#fff','background-color':'#104b21','border-radius':'1.8vw' }:{}">
+                <a>
+                    <i class="fas fa-columns" style="font-size: 1.5em"></i>
+                    <span class="nav-text"> Dashboard </span>
+                    <i class="fas fa-caret-right" style="font-size: 1em"></i>
+                </a>
+            </li>
+            <li class="has-subnav" (click)="select('Advisors')" [ngStyle]="selected === 'Advisors'?{'color':'#fff','background-color':'#104b21','border-radius':'1.8vw' }:{}">
+                <a>
+                    <i class="fas fa-user" style="font-size: 1.5em"></i>
+                    <span class="nav-text"> Advisors </span>
+                    <i class="fas fa-caret-right" style="font-size: 1em"></i>
+                </a>
+            </li>
+            <li class="has-subnav" (click)="select('My Documents')" [ngStyle]="selected === 'My Documents'?{'color':'#fff','background-color':'#104b21','border-radius':'1.8vw' }:{}">
+                <a>
+                    <i class="fas fa-file-alt" style="font-size: 1.5em"></i>
+                    <span class="nav-text">My Documents </span>
+                    <i class="fas fa-caret-right" style="font-size: 1em"></i>
+                </a>
+            </li>
+            <li class="has-subnav" (click)="select('News feed')" [ngStyle]="selected === 'News feed'?{'color':'#fff','background-color':'#104b21','border-radius':'1.8vw' }:{}">
+                <a>
+                    <i class="fas fa-podcast" style="font-size: 1.5em"></i>
+                    <span class="nav-text"> News feed </span>
+                    <i class="fas fa-caret-right" style="font-size: 1em"></i>
+                </a>
+            </li>
+            <li class="has-subnav" (click)="select('Support')" [ngStyle]="selected === 'Support'?{'color':'#fff','background-color':'#104b21','border-radius':'1.8vw' }:{}">
+                <a>
+                    <i class="fas fa-phone " style="font-size: 1.5em"></i>
+                    <span class="nav-text">Support</span>
+                    <i class="fas fa-caret-right" style="font-size: 1em"></i>
+                </a>
+            </li>
+
+
+        </ul>
+
+    </nav>
+    <!-- Seclted Div -->
+    <div *ngIf=" selected === 'Advisors'"></div>
+    <div *ngIf=" selected === 'My Documents'"></div>
+    <div *ngIf=" selected === 'News feed'"></div>
+    <div *ngIf=" selected === 'Support'"></div>
+
+    <!-- DashBoard -->
+    <div class="dashboard" *ngIf=" selected === 'Dashboard'">
+
+
+        <div class="dashboard__content">
+            <div class="dashboard__contentHeader">
+
+                <img class="dashboard__contentHeaderImg" src="../../assets/avatar.png" />
+                <span>Welcome,<strong>Alex Martin</strong>. Here's your personalized finacial dashboad</span>
+            </div>
+            <div>
+                <span>Currency :</span>
+                <select name="cars" id="cars">
+            <option value="volvo">GBP</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+
+            </div>
+            <div>
+                <span>My Account</span>
+
+            </div>
+        </div>
+        <div class="header__hr">
+            <h5>
+                Dashboard Home
+            </h5>
+            <hr class="hr" />
+        </div>
+        <!-- Stats -->
+        <div class="boxContainer">
+            <div class="box1">
+                <strong class="box__title"> Quick Stats</strong>
+                <div class="fullbox">
+                    <div class="box__content">
+                        <h5><span>&#163;</span> 563,350</h5>
+                        <span class="box__content__t">Your net worth as of today</span>
+                    </div>
+                    <div class="box__content">
+                        <h5><span>&#163;</span> 12,430</h5>
+                        <span class="box__content__t">Monthly CashFlow</span>
+                    </div>
+                    <div class="box__content">
+                        <h5><span>&#163;</span> 161,430</h5>
+                        <span class="box__content__t">Overall Liablites</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Scale -->
+            <div class=" box2">
+                <div class="fullbox2">
+                    <strong class="box__C"> My Finacial Health</strong>
+                    <button class="fullbox__button">View Finacial Health</button>
+                </div>
+
+                <div class="box__content2">
+                    <img class="img1" src="../../assets/graph1.svg" />
+                    <hr class="hr2" />
+                    <div class="box2__text">Your financial health status is <span class="box2__strongText"> GOOD.</span>However there's still room for improvement.
+                        <a href="">See how can improve</a></div>
+                </div>
+            </div>
+            <!-- Performance -->
+
+            <div class="box3">
+                <div class="fullbox3">
+                    <div class="fullbox3__title"> My Performance</div>
+
+                    <div class="btnPerformance" (click)="selectGraph('Weekly')" [ngStyle]="selectedGraph === 'Weekly'?{'background-color': 'rgb(226, 222, 222)' }:{}">Weekly</div>
+                    <div class="btnPerformance" (click)="selectGraph('Monthly')" [ngStyle]="selectedGraph === 'Monthly'?{'background-color': 'rgb(226, 222, 222)' }:{}">Monthly</div>
+                    <div class="btnPerformance" (click)="selectGraph('Yearly')" [ngStyle]="selectedGraph === 'Yearly'?{'background-color': 'rgb(226, 222, 222)' }:{}">Yearly</div>
+                    <div class="btnPerformance" (click)="selectGraph('All times')" [ngStyle]="selectedGraph === 'All times'?{'background-color': 'rgb(226, 222, 222)' }:{}">All times</div>
+                </div>
+
+                <br />
+                <div id="chart-container" *ngIf="selectedGraph === 'Weekly'">
+                    <canvas #myCanvas id="canvas" baseChart [chartType]="chartType" [datasets]="chartData" [labels]="chartLabels" [colors]="chartColors" [options]="chartOptions"></canvas>
+                </div>
+
+                <!-- Goal -->
+
+            </div>
+            <div class="box4">
+                <div class="fullbox4">
+                    <strong class="fullbox4__title"> My Goal</strong>
+                    <button class="box4_btn">View all Goals</button>
+                </div>
+
+                <div class="imgDounut__container">
+
+                    <div class="doughnut">
+                        Retainment
+                        <div class="doughnut_texts">
+                            <span><strong>&#163; 563,350</strong></span>
+                            <span>&#163; 2,000,000</span>
+                        </div>
+
+                        <canvas baseChart #baseChart [data]="retiremnetChartData" [labels]="retiremnetChartLabels" [chartType]="ChartType" [colors]="donutColors">
+                  </canvas>
+
+                    </div>
+
+                    <div class="doughnut">
+                        Vacation Home
+                        <div class="doughnut_texts">
+                            <span><strong>&#163; 101,342</strong></span>
+                            <span>&#163; 150,000</span>
+                        </div>
+                        <canvas baseChart #baseChart [data]="vacationChartData" [labels]="vacationChartLabels" [chartType]="ChartType" [colors]="donutColors">
+                  </canvas>
+                    </div>
+
+                    <div class="doughnut">
+                        Travel
+                        <div class="doughnut_texts">
+                            <span><strong>&#163; 101,342</strong></span>
+                            <span>&#163; 150,000</span>
+                        </div>
+                        <canvas baseChart #baseChart [data]="travelChartData" [labels]="travelChartLabels" [chartType]="ChartType" [colors]="donutColors">
+                  </canvas>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Industy -->
+
+            <div class="footBoxs">
+
+                <div class="box5">
+                    <div class="box__title">Industry News</div>
+                    <div *ngFor="let post of posts |  paginate: { itemsPerPage: 3, currentPage: p }">
+                        <br />
+                        <div *ngIf='!post'> No Post</div>
+                        <div class="box5__date">{{post.dateOfPost}}</div>
+                        <div style="font-size: 15px; font-weight: bold;">{{post.title}}</div>
+                        <br />
+                        <div class="box5__p">{{post.summeryParagraph}}</div>
+
+                        <a class="box5__link">Read full article</a>
+
+                    </div>
+
+                    <br />
+                    <div class="has-text-centered">
+                        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                    </div>
+                </div>
+
+                <!-- Comments -->
+
+                <div class="box6">
+                    <div class="box__title">Comments</div>
+                    <div *ngFor="let commnet of commnets">
+                        <div class="Comment__row" *ngIf="!commnet.isDeleted">
+                            <img class="comment__img" src="{{commnet.user.profilePic}}" />
+                            <div class="comment__content">
+                                <div>{{commnet.user.firstName}} {{commnet.user.lastName}}</div>
+                                <div class="time">{{commnet.time}}</div>
+                                <p class="para2">{{commnet.comment}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Users -->
+
+                <div class="box7">
+                    <div class="box__title">Users</div>
+                    <div class="user__row " #users *ngFor="let user of users">
+                        <img class="comment__user" src="{{user.profilePic}}" />
+                        <div class="user__content">
+                            <div>{{user.firstName}} {{user.lastName}}</div>
+                            <div *ngIf="user.isOnline" [ngStyle]="user.isOnline ?{'color':'green', 'font-size':'9px'}:{}">● Online</div>
+                            <div *ngIf="!user.isOnline" [ngStyle]="!user.isOnline ?{'color':'#c0c0c0','font-size':'9px'}:{}">● Offline</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

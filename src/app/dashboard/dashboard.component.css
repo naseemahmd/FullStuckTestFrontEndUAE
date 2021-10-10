@@ -1,0 +1,1013 @@
+.area {
+    float: left;
+    background: white;
+    width: 100%;
+    height: 100%;
+}
+
+.main-menu {
+    height: 130%;
+    background-image: url(../../assets/bc.svg);
+    border-right: 1px solid #e5e5e5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    overflow: hidden;
+    position: fixed;
+    -webkit-transition: width 0.05s linear;
+    transition: width 0.05s linear;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-menu>.content__icon {
+    object-fit: contain;
+    height: 15vh;
+    width: 8vw;
+}
+
+.main-menu>.content_img {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.03;
+}
+
+.main-menu>ul {
+    margin: 7px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.main-menu li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    height: 7vh;
+}
+
+.main-menu li>a {
+    position: relative;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #999;
+    font-family: arial;
+    font-size: 14px;
+    text-decoration: none;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    display: flex;
+    flex-direction: revert;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+
+.main-menu li>a>i {
+    color: white;
+    padding-right: 1vw;
+}
+
+.main-menu .nav-icon {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.main-menu .nav-text {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 80%;
+}
+
+.fa-2x {
+    font-size: 1.5em;
+}
+
+.fa {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+nav {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+nav ul,
+nav li {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li:hover>a,
+nav.main-menu li.active>a,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus,
+.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+.dashboard-page nav.dashboard-menu ul li.active a {
+    color: #fff;
+}
+
+.main-menu li:hover {
+    color: #fff;
+    background-color: #104b21;
+    border-radius: 1.8vw;
+}
+
+@font-face {
+    font-family: "Titillium Web";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Titillium WebLight"), local("TitilliumWeb-Light"), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format("woff");
+}
+
+.footBoxs {
+    display: inline-flex;
+    flex-wrap: unset;
+    justify-content: left;
+}
+
+.dashboard {
+    width: 80%;
+    height: 100vh;
+    margin: 0% 0% 0% 20%;
+}
+
+.dashboard__content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 30px 0px 30px;
+}
+
+.dashboard__contentHeaderImg {
+    width: 3em;
+    height: 3em;
+    margin: 10px;
+}
+
+.header__hr {
+    display: flex;
+    align-items: center;
+    padding: 0px 30px 10px 30px;
+}
+
+.online-dot {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    background-color: turquoise;
+}
+
+.hr {
+    flex: 1;
+    height: 2px;
+}
+
+.boxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 15px 20px;
+}
+
+.box1 {
+    padding: 5px 0px 5px 0px;
+    height: fit-content;
+    margin: 10px;
+    display: flex;
+    min-width: 320px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.box2 {
+    padding: 5px 0px 5px 0px;
+    height: fit-content;
+    margin: 10px;
+    display: flex;
+    min-width: 320px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.box3 {
+    padding: 5px 0px 5px 0px;
+    height: fit-content;
+    margin: 10px;
+    display: flex;
+    min-width: 320px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.box4 {
+    padding: 5px 0px 5px 0px;
+    height: fit-content;
+    margin: 10px;
+    display: flex;
+    min-width: 320px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.box5 {
+    padding: 5px 0px 5px 0px;
+    height: fit-content;
+    margin: 10px;
+    display: flex;
+    min-width: 320px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.box6 {
+    padding: 5px 0px 5px 0px;
+    height: fit-content;
+    margin: 10px;
+    display: flex;
+    min-width: 320px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.box5 {
+    border: 1px solid rgb(226, 222, 222);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.has-text-centered {
+    align-content: center;
+}
+
+.box6 {
+    border: 1px solid rgb(226, 222, 222);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.box7 {
+    border: 1px solid rgb(226, 222, 222);
+    border-radius: 8px;
+    padding: 10px;
+    width: 250px;
+    margin: 10px;
+}
+
+.box__title,
+.fullbox2__title,
+.fullbox3__title,
+.fullbox4__title {
+    padding: 0px;
+    font-weight: bold;
+    font-weight: bold;
+}
+
+.fullbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box__content {
+    background: white;
+    padding: 9px;
+    border-radius: 5px;
+    margin: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box__content2 {
+    background: white;
+    padding: 9px 0px 9px 0px;
+    margin: 6px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 420px;
+}
+
+.box__content2 .img1 {
+    width: 100%;
+    height: 10%;
+}
+
+.box__content__t {
+    font-size: 15px;
+}
+
+.fullbox__button {
+    border: none;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.chartjs-render-monitor {
+    width: 200px;
+    height: 100px;
+}
+
+.hr2 {
+    margin-bottom: 5px;
+    margin-top: 12px;
+}
+
+.box2__text {
+    font-size: 10px;
+    padding: 0px 9px 0px 9px;
+}
+
+.box2__strongText {
+    color: rgb(58, 233, 35);
+}
+
+.fullbox3,
+.fullbox2,
+.fullbox4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btnPerformance {
+    border-radius: 15px;
+    background-color: white;
+    border: none;
+    margin-right: 10px;
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.btnPerformance:hover {
+    background-color: rgb(226, 222, 222);
+}
+
+.img3 {
+    object-fit: contain;
+    width: 38vw;
+}
+
+.box4_btn {
+    border: none;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.imgDounut__container {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 6px;
+    padding-top: 20px;
+}
+
+.imgDounut {
+    object-fit: contain;
+    width: auto;
+    height: 29vh;
+}
+
+.doughnut {
+    background: white;
+    padding: 6px 0px 6px 0px;
+    margin: 3px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 175px;
+    height: 180px
+}
+
+.doughnut_text {
+    font-size: 10px;
+}
+
+.doughnut_hr {
+    border: 0.5px solid rgb(218, 218, 218);
+    z-index: 1;
+    opacity: 5;
+    width: 100%;
+}
+
+.doughnut_texts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+
+.doughnut_texts>span {
+    font-size: 9px;
+}
+
+.baseChart {
+    display: block;
+    height: 200px;
+    width: 250px;
+}
+
+.box5__date {
+    color: rgb(124, 123, 123);
+    font-size: 10px;
+}
+
+.box5__p {
+    font-size: 10px;
+    /* width: 450px; */
+}
+
+.box5__link {
+    font-size: 10px;
+    color: blue;
+}
+
+.Comment__row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.user__row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.img__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment__img,
+.img {
+    width: 3em;
+    height: 3em;
+    margin: 10px;
+}
+
+.comment__content,
+.img__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.user__content,
+.img__user {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.comment__user,
+.img {
+    width: 3em;
+    height: 3em;
+    margin: 10px;
+}
+
+.name {
+    font-size: 10px;
+}
+
+.time,
+.status {
+    color: rgb(187, 180, 180);
+    font-size: 9px;
+}
+
+.box__C {
+    padding: 0px;
+}
+
+.para2 {
+    font-size: 10px;
+    width: 150px;
+}
+
+.box5__p {
+    max-width: 350px;
+}
+
+.img__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .boxContainer {
+        display: inherit;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px 20px;
+    }
+    .main-menu:hover,
+    nav.main-menu.expanded {
+        width: 250px;
+        overflow: visible;
+        font-size: 12px;
+    }
+    .no-touch .scrollable.hover {
+        overflow-y: hidden;
+    }
+    .no-touch .scrollable.hover:hover {
+        overflow-y: auto;
+        overflow: visible;
+    }
+    nav.main-menu>.content__icon {
+        object-fit: contain;
+        height: 10%;
+        width: 100%;
+    }
+    .main-menu li>a>i {
+        color: white;
+        padding-right: 2vw;
+    }
+    nav.main-menu {
+        width: 5%;
+    }
+    .main-menu li {
+        width: 100%;
+        padding-left: 5px;
+    }
+    .box5__p {
+        max-width: 100%;
+    }
+    .dashboard {
+        margin: 0% 0% 0% 5%;
+        width: 100%;
+    }
+    .dashboard__contentHeader {
+        font-size: 14px;
+    }
+    .footBoxs {
+        flex-direction: column;
+    }
+    .middleBoxs {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    .dashboard__contentHeaderImg {
+        width: 2em;
+        height: 2em;
+        margin: 8px;
+    }
+    .dashboard__contentHeaderTxt,
+    .currnecyHeaderText,
+    #cars,
+    .accountText,
+    .box__content__t {
+        font-size: 12;
+    }
+    .box__title,
+    .box__C,
+    .fullbox3__title,
+    .fullbox4__title,
+    .amoutOF {
+        font-size: 14;
+    }
+    .box__content2 {
+        width: 100%;
+    }
+    .box2__text {
+        font-size: 10px;
+    }
+    .doughnut {
+        width: 175px;
+        height: 150px;
+    }
+    .imgDounut__container {
+        padding-top: 10;
+    }
+    .industryHead {
+        font-size: 14;
+    }
+    .box5__p {
+        width: 100%;
+        text-align: justify;
+    }
+    .box6,
+    .box7 {
+        min-width: 100%;
+    }
+    .doughnut {
+        width: 220px;
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .boxContainer {
+        display: inherit;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px 20px;
+    }
+    .main-menu:hover,
+    nav.main-menu.expanded {
+        width: 250px;
+        overflow: visible;
+        font-size: 12px;
+    }
+    .no-touch .scrollable.hover {
+        overflow-y: hidden;
+    }
+    .no-touch .scrollable.hover:hover {
+        overflow-y: auto;
+        overflow: visible;
+    }
+    nav.main-menu>.content__icon {
+        object-fit: contain;
+        height: 10%;
+        width: 100%;
+    }
+    .main-menu li>a>i {
+        color: white;
+        padding-right: 3vw;
+    }
+    nav.main-menu {
+        width: 5%;
+    }
+    .main-menu li {
+        width: 100%;
+        padding-left: 5px;
+    }
+    .box5__p {
+        max-width: 100%;
+    }
+    .dashboard {
+        margin: 0% 0% 0% 5%;
+        width: 100%;
+    }
+    .dashboard__contentHeader {
+        font-size: 14px;
+    }
+    .footBoxs {
+        flex-direction: column;
+    }
+    .middleBoxs {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    .dashboard__contentHeaderImg {
+        width: 2em;
+        height: 2em;
+        margin: 8px;
+    }
+    .dashboard__contentHeaderTxt,
+    .currnecyHeaderText,
+    #cars,
+    .accountText,
+    .box__content__t {
+        font-size: 12;
+    }
+    .box__title,
+    .box__C,
+    .fullbox3__title,
+    .fullbox4__title,
+    .amoutOF {
+        font-size: 14;
+    }
+    .box__content2 {
+        width: 100%;
+    }
+    .box2__text {
+        font-size: 10px;
+    }
+    .doughnut {
+        width: 175px;
+        height: 150px;
+    }
+    .imgDounut__container {
+        padding-top: 10;
+    }
+    .industryHead {
+        font-size: 14;
+    }
+    .box5__p {
+        width: 100%;
+        text-align: justify;
+    }
+    .box6,
+    .box7 {
+        min-width: 100%;
+    }
+    .doughnut {
+        width: 220px;
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .boxContainer {
+        display: inherit;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px 20px;
+    }
+    .main-menu:hover,
+    nav.main-menu.expanded {
+        width: 250px;
+        overflow: visible;
+        font-size: 12px;
+    }
+    .no-touch .scrollable.hover {
+        overflow-y: hidden;
+    }
+    .no-touch .scrollable.hover:hover {
+        overflow-y: auto;
+        overflow: visible;
+    }
+    nav.main-menu>.content__icon {
+        object-fit: contain;
+        height: 10%;
+        width: 100%;
+    }
+    .main-menu li>a>i {
+        color: white;
+        padding-right: 3vw;
+    }
+    nav.main-menu {
+        width: 5%;
+    }
+    .main-menu li {
+        width: 100%;
+        padding-left: 5px;
+    }
+    .box5__p {
+        max-width: 100%;
+    }
+    .dashboard {
+        margin: 0% 0% 0% 5%;
+        width: 100%;
+    }
+    .dashboard__contentHeader {
+        font-size: 14px;
+    }
+    .footBoxs {
+        flex-direction: column;
+    }
+    .middleBoxs {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    .dashboard__contentHeaderImg {
+        width: 2em;
+        height: 2em;
+        margin: 8px;
+    }
+    .dashboard__contentHeaderTxt,
+    .currnecyHeaderText,
+    #cars,
+    .accountText,
+    .box__content__t {
+        font-size: 12;
+    }
+    .box__title,
+    .box__C,
+    .fullbox3__title,
+    .fullbox4__title,
+    .amoutOF {
+        font-size: 14;
+    }
+    .box__content2 {
+        width: 100%;
+    }
+    .box2__text {
+        font-size: 10px;
+    }
+    .doughnut {
+        width: 175px;
+        height: 150px;
+    }
+    .imgDounut__container {
+        padding-top: 10;
+    }
+    .industryHead {
+        font-size: 14;
+    }
+    .box5__p {
+        width: 100%;
+        text-align: justify;
+    }
+    .box6,
+    .box7 {
+        min-width: 100%;
+    }
+    .doughnut {
+        width: 220px;
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 427px) {
+    .operateMenu {
+        display: flex;
+        border: none;
+        outline: none;
+        background: none;
+    }
+    .content__icon {
+        width: 20vw;
+    }
+    .closeMenu {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+    .closeMenuBtn {
+        border: none;
+        outline: none;
+        background: none;
+        color: white;
+        font-size: 16;
+    }
+    .fullbox {
+        flex-direction: column;
+    }
+    .box__content {
+        min-width: 280;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .main-menu {
+        width: 40%;
+    }
+    .operateMenu {
+        display: flex;
+        border: none;
+        outline: none;
+        background: none;
+    }
+    .content__icon {
+        width: 20vw;
+    }
+    .closeMenu {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+    .closeMenuBtn {
+        border: none;
+        outline: none;
+        background: none;
+        color: white;
+        font-size: 16;
+    }
+    .fullbox {
+        flex-direction: unset;
+    }
+    .box__content {
+        min-width: 280;
+    }
+    .box5,
+    .box6,
+    .box7 {
+        width: 100%;
+    }
+    .footBoxs {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 427px) {
+    .operateMenu {
+        display: none;
+    }
+    .closeMenu {
+        width: 100%;
+        display: none;
+        justify-content: flex-end;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .main-menu {
+        width: 20%;
+    }
+    .main-menu>.content__icon {
+        object-fit: contain;
+        height: 15vh;
+        width: 8vw;
+    }
+    .dashboard__contentHeaderImg {
+        width: 3em;
+        height: 3em;
+        margin: 8px;
+    }
+    .dashboard__contentHeaderTxt,
+    .currnecyHeaderText,
+    #cars,
+    .accountText,
+    .box__content__t {
+        font-size: 14;
+    }
+    .box__title,
+    .box__C,
+    .fullbox3__title,
+    .fullbox4__title,
+    .amoutOF {
+        font-size: 16;
+    }
+    .box__content2 {
+        width: 530px;
+    }
+    .box2__text {
+        font-size: 10px;
+    }
+    #myChart {
+        width: 500;
+        height: fit-content;
+    }
+    .doughnut {
+        width: 160;
+    }
+    .imgDounut__container {
+        padding-top: 15;
+    }
+    .industryHead {
+        font-size: 14;
+    }
+    .box5__p {
+        width: 320;
+        text-align: justify;
+    }
+    .box6 {
+        min-width: 300px;
+    }
+    .box7 {
+        min-width: 300px;
+    }
+    .footBoxs {
+        flex-wrap: nowrap;
+    }
+    .middleBoxs {
+        display: flex;
+        flex-direction: row;
+    }
+}

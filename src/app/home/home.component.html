@@ -1,0 +1,20 @@
+<!-- Home Page Details -->
+<div class="container-fluid content">
+    <img class="content__img" src="../assets//bcImg.png" />
+    <div class="content__body">
+        <img class="content__icon" src="../assets/fudge.svg" />
+        <div type="button" class="content__button" style="color: white; font-size: large;" *ngIf="!show" (click)="toggle($event)">
+            <i class="fas fa-arrow-down"></i>
+        </div>
+    </div>
+    <!-- Second Data Div with Button -->
+    <div class="viewDashboard" *ngIf="show" [@slideInOut]>
+        <div class="viewDashboardHead">
+            All your finance in one place.
+        </div>
+        <div class="viewDashboardText">
+            Find out how our team of highly qualified financial consultants can help you to achieve your financial goal
+        </div>
+        <button class="view__button" type="button" (click)="goToPage('dashboard')" target="_blank"> View Dashboard</button>
+    </div>
+</div>
